@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#totalArea{
+    display: flex;
+}
+
+#leftStaticMenu {
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    width: 20%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+.left_menu_lniks {
+    padding: 15px 20px;
+    font-size: 18px;
+}
+
+.active_li{
+    background: #fff;
+    color: #00b6fd;
+    font-weight: 600;
+}
+
+
+.left_static_part{
+    width: 20%;
+    min-height: 100vh;
+}
+
+
+#pageSection{
+    width: 80%;
+    min-height: 100vh;
+}
+
+#pageSection{
+    padding: 60px 25px;
+}
+
+
+.header {
+    font-weight: 600;
+    color: #616161;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+.date_data {
+    margin-top: 10px;
+    color: #616161;
+}
+
+.prev {
+    margin-right: 10px;
+    font-size: 25px;
+    top: 3px;
+    position: relative;
+}
+
+.next {
+    margin-left: 10px;
+    font-size: 25px;
+    top: 3px;
+    position: relative;
+}
+
+
+table{
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.appoinment_table th {
+    text-align: center;
+    color: #737373;
+    font-weight: 600;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+.appoinment_table td{
+    text-align: center;
+}
+
+.appoinments .appoinment_table td:nth-child(2), 
+.online, 
+.appoinments .appoinment_table td:nth-child(5){
+    color: #4d8be7;
+}
+
+.appoinments .appoinment_table td:nth-child(7){
+    text-align: left;
+}
+
+
+.appoinment_table td {
+    text-align: center;
+    font-size: 11px;
+    max-width: 130px;
+    padding: 15px 12px;
+}
+
+.border{
+    border-top: 1px solid #dbdada;
+}
+
+
+.border:nth-child(1){
+    border-top: 1px solid #dbdada;
+}
+
+.border:last-child{
+    border-bottom: 1px solid #c4c2c2;
+}
+
+.d_none{
+    display: none!important;
+}
+
+.spacer{
+    height: 60px;
+}
+
+
+.border1{
+    border-top: 1px solid #dbdada;
+}
+
+
+.red{
+    color: rgb(252, 66, 33);
+}
+
+
+
+
+
+
+.logout_page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.logout_page p {
+    font-size: 25px;
+    font-weight: 600;
+    color: #616161;
+}
+
+
+.shedule_sub_header {
+    font-size: 20px;
+    color: #616161;
+    margin: 35px 0px 25px 0px;
+}
+
+.data_names{
+    font-weight: bold;
+    color: #4a4a4a;
+    font-size: 13px;
+    display: flex;
+    border-bottom: 1.5px solid #bdb9b9;
+    text-align: center;
+    line-height: 1.6;
+    padding-bottom: 10px;
+}
+
+.age, .gender{
+    width: 12%;
+}
+
+.id{
+    width: 9%;
+}
+
+.name{
+    width: 15%;
+}
+
+.expertise{
+    width: 14.5%;
+}
+
+.open_hours {
+    width: 37.5%;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.the_datas .open_hours{
+    line-height: 2.5;
+}
+
+.open_hours_data{
+    width: 100%;
+    display: flex;
+}
+
+.day{width: 33%;}
+.time{width: 33%;text-align: right;}
+.status{width: 33%;text-align: center;}
+
+.the_datas {
+    font-weight: normal;
+    font-size: 11px;
+    padding-top: 7px;
+    border: none;
+}
+
+
+
+
+.docImage {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: -1px 3px 3px 3px #c8c8c8;
+}
+
+.docImage img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.imp_spacer{
+    height: 115px;
+    background-color: #4a4a4a;
+}
+
+.cstm_border{
+    border-top: 1.5px solid #bdb9b9;
+    margin-top: 95px;
+}
+
+
+#nurses{
+    margin-top: 125px;
+}
+
+
+
+.width_70_flex{
+    width: 70%;
+    display: flex;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.left {
+    width: 50%;
+    text-align: left;
+    font-weight: 600;
+    margin-left: 20px;
+    padding-left: 30px;
+    line-height: 1.9;
+    margin-right: 60px;
+    color: #494646;
+}
+
+.right{
+    width: 50%;
+    border-left: 1px solid #737373;
+    text-align: right;
+    line-height: 1.9;
+    padding-right: 30px;
+}
+
+.para {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.para_right{
+    text-align: right;
+}
+
+.para_center{
+    text-align: center;
+}
+
+.small{
+    font-size: 13.5px;
+    font-weight: normal;
+}
+
+.sub_txt {
+    margin-top: 25px;
+    color: #616161;
+}
+
+.editNsave {
+    color: #347ae3;
+    font-weight: 500;
+    margin-left: 25px;
+    font-size: 16px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+
+.hapier {
+    font-weight: 500;
+    margin: 0px 5px 0px 30px;
+    font-size: 16px;
+}
+
+#announcement_txt {
+    margin: 10px 0px;
+    padding: 5px 0px;
+    color: #777575;
+    font-size: 15.5px;
+    font-family: arial-black;
+    width: 477px;
+    height: 100%;
+}
+
+.b_text{
+    border: 1px solid black;
+}
+
+.b_none{
+    border: none;
+    pointer-events: none;
+    resize: none;
+}
+
+#sendBox:focus, select:focus{
+    outline: none;
+}
+
+#sendBox{
+    width: 100%;
+    margin-top: 15px;
+    min-height: 200px;
+    padding: 10px 15px;
+}
+
+
+.history{
+    display: flex;
+    margin-top: 30px;
+}
+
+.history_names{
+    width: 25%;
+    color: #616161;
+    font-weight: 600;
+    text-align: center;
+    padding-right: 15px;
+}
+
+.sent_txt{
+    width: 75%;
+    padding: 25px 0px;
+}
+
+.sender_name {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.receiver_name{
+    font-size: 17px;
+    margin-top: 15px; 
+}
+
+.line_row {
+    width: 110px;
+    margin: 0px auto;
+    border: 0.5px solid #9f9f9f;
+}
+
+.sent_txt{
+    font-size: 11.5px;
+    font-weight: normal;
+    margin-top: -20px;
+    color: #515151;
+}
+
+.m1{
+    margin-bottom: 10px;
+}
+
+
+.send_section{
+    margin-top: 80px;
+}
+
+
+
+#notification {
+    position: fixed;
+    background: #2b2a2a;
+    z-index: 200;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+    color: black;
+    font-weight: bold;
+    transition: all 0.7s;
+    opacity: 0;
+}
+
+.show
+{
+    opacity: 1!important;
+    top: 50px;
+    right: 50px;
+}
+
+.iconSpec{
+    color: #06c4b2;
+    position: relative;
+    top: 5px;
+    font-size: 30px;
+}
+
+.top_up {
+    position: relative;
+    top: -5px;
+    color: #15cbf4;
+    font-size: 15px;
+}
+
+
+

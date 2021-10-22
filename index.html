@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>Health On Ipads</title>
+    <link rel="shortcut icon" href="assets/images/nurse.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+
+    <!-- // the left fixed navbar  -->
+    <div id="leftStaticMenu" class="">
+
+        <ul>
+            <li data-id="appoinments" class="left_menu_lniks active_li" onclick="menuFunc('appoinments')"> 
+                Appoinments
+            </li>
+            <li data-id="shedule" class="left_menu_lniks" onclick="menuFunc('shedule')"> Shedule</li>
+            <li data-id="messages" class="left_menu_lniks" onclick="menuFunc('messages')"> Messages</li>
+            <li data-id="inventory" class="left_menu_lniks" onclick="menuFunc('inventory')"> Inventory</li>
+            <li data-id="finance" class="left_menu_lniks" onclick="menuFunc('finance')"> Finance</li>
+            <li data-id="patients" class="left_menu_lniks" onclick="menuFunc('patients')"> Patience</li>
+            <li data-id="logout_page" class="left_menu_lniks" onclick="menuFunc('logout_page')"> Logout</li>
+        </ul>
+
+
+    </div>
+
+
+    <section id="totalArea" class="">
+
+        <!-- important as this takes the left 20% of the flex div  -->
+        <div class="left_static_part"></div>
+
+        <!-- the right 80% side where the contents are shown  -->
+        <div id="pageSection" class="">
+
+            <div class="common_sec appoinments"> </div>
+
+            <div class="common_sec shedule d_none"></div>
+
+            <div class="common_sec messages d_none"> </div>
+
+            <div class="common_sec inventory d_none"></div>
+
+            <div class="common_sec finance d_none"></div>
+
+            <div class="common_sec patients d_none"> </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- popup notifications  -->
+    <div id="notification" class="">
+        <span class="icons">
+            <span class="material-icons iconSpec"> check_circle</span>
+        </span>
+        <span class="top_up"></span>
+    </div>
+
+
+
+    <!-- logout page  this page is so empty thus stays here -->
+    <div class="logout_page d_none">
+        <div>
+            <p>
+                You have successfully Logged out
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/index.js"></script>
+
+    <script src="assets/js/ajax_req.js"></script>
+
+
+</body>
+
+</html>
